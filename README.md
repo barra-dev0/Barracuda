@@ -5,7 +5,7 @@
 # 🌐 ~ Sommaire :
 
 
- barracuda-dance is a denial of service tool that can be used in a private or local setting with permission,
+ barracuda is a denial of service tool that can be used in a private or local setting with permission,
 it can be used to test the robustness of a website. 📡
 
 ## 📖 ~ Description :
