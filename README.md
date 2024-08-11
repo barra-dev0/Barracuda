@@ -32,6 +32,7 @@ python3 main.py
 ```
 ### or
 <p>
+ 
 ```
 git clone https://github.com/barra-dev0/Barracuda.git
 cd Barracuda
