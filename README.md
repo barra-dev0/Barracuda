@@ -47,3 +47,19 @@ python3 main.py
  . GET  | GET Flood
  . POST | POST Flood
 ```
+
+## 🔗~ Credit :
+
+<p>
+  - <a href="coming">Discord</a><br>
+  - <a href="coming">Website</a><br>
+  - Creator: barra-dev<br>
+  - Version: 1.0
+</p>
+
+# 🛑 ~ LEGAL NOTICE :
+
+THIS SOFTWARE IS PROVIDED FOR EDUCATIONAL USE ONLY!
+IF YOU ENGAGE IN ANY ILLEGAL ACTIVITY
+THE AUTHOR DOES NOT TAKE ANY RESPONSIBILITY FOR IT.
+BY USING THIS SOFTWARE YOU AGREE WITH THESE TERMS.
