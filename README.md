@@ -22,5 +22,5 @@ it can be used to test the robustness of a website. 📡
 
 <h1 align="center">GUI 🎉</h1> 
 
-![gui](https://github.com/user-attachments/assets/f0febcef-b24f-4ffe-ac15-420571d4a619)
+![gui](https://github.com/user-attachments/assets/faeda7fa-1378-4a62-b822-bde0edb66bfa)
 
