@@ -2,7 +2,8 @@ import os
 os.system("pip install PyQt5")
 try:
     import sys
-    from PyQt5.QtWidgets import QApplication, QMainWindow, QLabel, QLineEdit, QComboBox, QPushButton, QVBoxLayout, QGridLayout, QWidget
+    from PyQt5.QtWidgets import (QApplication, QMainWindow, QLabel, QLineEdit, QComboBox, 
+                                 QPushButton, QGridLayout, QWidget, QVBoxLayout)
     from PyQt5.QtGui import QIcon, QPixmap
     from PyQt5.QtCore import Qt, QTimer
     from colorama import Fore, init
