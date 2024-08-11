@@ -28,7 +28,7 @@ it can be used to test the robustness of a website. 📡
 <a href="https://github.com/barra-dev0/Barracuda/archive/main.zip">Dowloads Tools Here</a>
 ```
 python3 setup.py
-python3 main.py
+python3 main.py or linux-version.py
 ```
 ### or
 <p>
@@ -37,7 +37,7 @@ python3 main.py
 git clone https://github.com/barra-dev0/Barracuda.git
 cd Barracuda
 python3 setup.py
-python3 main.py
+python3 main.py or linux-version.py
 ```
 
 </p>
