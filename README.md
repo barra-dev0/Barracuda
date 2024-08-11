@@ -26,7 +26,10 @@ it can be used to test the robustness of a website. 📡
 ## 🐢 ~ Setup  :
 
 <a href="https://github.com/barra-dev0/Barracuda/archive/main.zip">Dowloads Tools Here</a>
-
+```
+python3 setup.py
+python3 main.py
+```
 <p>
   
 ```
