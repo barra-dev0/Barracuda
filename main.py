@@ -1,13 +1,14 @@
 """
-██████╗  █████╗ ██████╗ ██████╗  █████╗       ██████╗  █████╗ ███╗   ██╗ ██████╗███████╗
-██╔══██╗██╔══██╗██╔══██╗██╔══██╗██╔══██╗      ██╔══██╗██╔══██╗████╗  ██║██╔════╝██╔════╝
-██████╔╝███████║██████╔╝██████╔╝███████║█████╗██║  ██║███████║██╔██╗ ██║██║     █████╗  
-██╔══██╗██╔══██║██╔══██╗██╔══██╗██╔══██║╚════╝██║  ██║██╔══██║██║╚██╗██║██║     ██╔══╝  
-██████╔╝██║  ██║██║  ██║██║  ██║██║  ██║      ██████╔╝██║  ██║██║ ╚████║╚██████╗███████╗
-╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝      ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═══╝ ╚═════╝╚══════╝
+██████╗  █████╗ ██████╗ ██████╗  █████╗  ██████╗██╗   ██╗██████╗  █████╗ 
+██╔══██╗██╔══██╗██╔══██╗██╔══██╗██╔══██╗██╔════╝██║   ██║██╔══██╗██╔══██╗
+██████╔╝███████║██████╔╝██████╔╝███████║██║     ██║   ██║██║  ██║███████║
+██╔══██╗██╔══██║██╔══██╗██╔══██╗██╔══██║██║     ██║   ██║██║  ██║██╔══██║
+██████╔╝██║  ██║██║  ██║██║  ██║██║  ██║╚██████╗╚██████╔╝██████╔╝██║  ██║
+╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝ ╚═════╝ ╚═════╝ ╚═╝  ╚═╝
+                                                                        
                                                                                         
 
-Barracuda-dance is a DOS tool that can send a large load to http servers.
+Barracuda is a DOS tool that can send a large load to http servers.
 
 This tool is intended for research purposes only
 and any malicious use of this tool is prohibited.
@@ -56,11 +57,16 @@ def cls():
 cls()
 
 ascii_art = """
-┌┐ ┌─┐┬─┐┬─┐┌─┐  ┌┬┐┌─┐┌┐┌┌─┐┌─┐
-├┴┐├─┤├┬┘├┬┘├─┤───││├─┤││││  ├┤ 
-└─┘┴ ┴┴└─┴└─┴ ┴  ─┴┘┴ ┴┘└┘└─┘└─┘
-                                                              
-
+                                                                                          
+                            _                                                 _        
+                            ( )                                               ( )       
+                            | |_      _ _  _ __  _ __   _ _    ___  _   _    _| |   _ _ 
+                            | '_`\  /'_` )( '__)( '__)/'_` ) /'___)( ) ( ) /'_` | /'_` )
+                            | |_) )( (_| || |   | |  ( (_| |( (___ | (_) |( (_| |( (_| |
+                            (_,__/'`\__,_)(_)   (_)  `\__,_)`\____)`\___/'`\__,_)`\__,_)
+                                                                                        
+                                                           
+                                                                            
 ~ Tool created by barra-dev.
 ~ This tool was created for educational purposes. I am not responsible for your use of this tool.  
 
@@ -82,7 +88,7 @@ print(gradient_art)
 class DDosGUI:
     def __init__(self, master):
         self.master = master
-        self.master.title("Ghost Down ~ By Chef")
+        self.master.title("Barracuda ~ By barra-dev")
         self.master.configure(background='#333')
 
         current_dir = os.path.dirname(os.path.abspath(__file__))
@@ -214,7 +220,7 @@ class DDosGUI:
                 s.sendall(packet_data)
                 s.send(packet_data)
                 rps += 2
-            print(f"{Fore.LIGHTBLUE_EX}http {Fore.WHITE} {Fore.LIGHTBLACK_EX}of {Fore.BLUE}-----> {Fore.LIGHTBLUE_EX}{target_ip}{Fore.WHITE}:{Fore.LIGHTBLACK_EX}{target_port}{Fore.BLUE} using{Fore.WHITE} {http_method} {Fore.LIGHTBLACK_EX}method.")  
+            print(f"{Fore.LIGHTBLUE_EX}http {Fore.WHITE}brutalization{Fore.LIGHTBLACK_EX} of {Fore.BLUE}-----> {Fore.LIGHTBLUE_EX}{target_ip}{Fore.WHITE}:{Fore.LIGHTBLACK_EX}{target_port}{Fore.BLUE} using{Fore.WHITE} {http_method} {Fore.LIGHTBLACK_EX}method.")  
         except Exception as e:
             pass
         finally:
