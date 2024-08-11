@@ -1,3 +1,4 @@
+![cli](https://github.com/user-attachments/assets/ba4db718-1727-43b6-b5f4-89eedae82e53)
 # 🌐 ~ Sommaire :
 
  barracuda-dance is a denial of service tool that can be used in a private or local setting with permission,
@@ -22,4 +23,5 @@ it can be used to test the robustness of a website. 📡
 
  
 ![gui](https://github.com/user-attachments/assets/78feafc0-c37b-49a6-b706-382dfaa4fc97)
-![cli](https://github.com/user-attachments/assets/6be08771-490f-4def-82bc-a076ef281d5e)
+
+
