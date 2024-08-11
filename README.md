@@ -1,4 +1,4 @@
-<h1 align="center">Barracuda-Dance 🐟</h1> 
+<h1 align="center">Barracuda 🐟</h1> 
 
 
 
@@ -16,7 +16,7 @@ it can be used to test the robustness of a website. 📡
 
 <p>
    --> 🇬🇧 written in english.<br>
-   --> 🐍 barracuda-dance is 100% built in python.<br>
+   --> 🐍 barracuda is 100% built in python.<br>
    --> 📁 open-source.<br>
    --> 💻 multi platform(linux and window).<br>
 </p>
