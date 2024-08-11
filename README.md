@@ -1,8 +1,7 @@
 <h1 align="center">Barracuda 🐟</h1> 
 
+![cli](https://github.com/user-attachments/assets/61f5f897-5035-44aa-83e9-f95544066e9f)
 
-
-![cli](https://github.com/user-attachments/assets/7732a0a6-f7d6-42c4-8cfd-b37df414bd8d)
 # 🌐 ~ Sommaire :
 
 
