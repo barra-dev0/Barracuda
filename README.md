@@ -30,8 +30,8 @@ it can be used to test the robustness of a website. 📡
 python3 setup.py
 python3 main.py
 ```
+### or
 <p>
-###  or
 ```
 git clone https://github.com/barra-dev0/Barracuda.git
 cd Barracuda
