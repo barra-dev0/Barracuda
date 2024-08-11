@@ -156,7 +156,8 @@ def main():
     start = input("Do you want to start the attack? (y/n): ").lower()
     if start == 'y':
         tool.start_attack(target_url, target_port, speed)
-        input("Press Enter to stop the attack...")
+        input("""Press Enter to stop the attack...
+        """)
         tool.stop_attack()
 
 if __name__ == "__main__":
