@@ -21,12 +21,8 @@ it can be used to test the robustness of a website. 📡
    --> 💻 multi platform(linux and window).<br>
 </p>
 
-
-
-
-
-
+<h1 align="center">GUI 🎉</h1> 
  
-![gui](https://github.com/user-attachments/assets/78feafc0-c37b-49a6-b706-382dfaa4fc97)
+<h1 align="center">![gui](https://github.com/user-attachments/assets/78feafc0-c37b-49a6-b706-382dfaa4fc97)
 
 
