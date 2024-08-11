@@ -22,7 +22,6 @@ it can be used to test the robustness of a website. 📡
 </p>
 
 <h1 align="center">GUI 🎉</h1> 
- 
-<h1 align="center">![gui](https://github.com/user-attachments/assets/78feafc0-c37b-49a6-b706-382dfaa4fc97)
+![gui](https://github.com/user-attachments/assets/02fce299-4cd0-44b7-baa3-317625a096d1)
 
 
