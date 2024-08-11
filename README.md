@@ -1,3 +1,7 @@
+<h1 align="center">Barracuda-Dance 🐟</h1> 
+
+
+
 ![cli](https://github.com/user-attachments/assets/7732a0a6-f7d6-42c4-8cfd-b37df414bd8d)
 # 🌐 ~ Sommaire :
 
