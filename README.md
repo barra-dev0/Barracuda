@@ -2,7 +2,7 @@
 
 ![cli](https://github.com/user-attachments/assets/61f5f897-5035-44aa-83e9-f95544066e9f)
 
-# 🌐 ~ Sommaire :
+# 🌐 ~ Summary :
 
 
  barracuda is a denial of service tool that can be used in a private or local setting with permission,
