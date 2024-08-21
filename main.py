@@ -93,10 +93,8 @@ class DDosGUI:
 
         current_dir = os.path.dirname(os.path.abspath(__file__))
 
-        # Configure l'icône de la fenêtre
         self.master.iconbitmap(os.path.join(current_dir, "img", "logo.ico"))
 
-        # Charger et configurer l'image de fond
         background_image_path = os.path.join(current_dir, "img", "fond.jpg")  
         background_image = Image.open(background_image_path)
         background_photo = ImageTk.PhotoImage(background_image)
@@ -105,7 +103,6 @@ class DDosGUI:
         self.background_label.image = background_photo
         self.background_label.place(x=0, y=0, relwidth=1, relheight=1)
 
-        # Configure le style de l'interface
         self.style = ttk.Style()
         self.style.configure('TFrame', background='#333')
         self.style.configure('TLabel', background='#333', foreground='white', font=('Arial', 12))
@@ -229,10 +226,10 @@ class DDosGUI:
     def get_speed(self, speed):
         speed_map = {
             'slow': 0.5,
-            'medium': 0.3,
-            'fast': 0.1,
-            'very-fast': 0.05,
-            'brutally': 0.01
+            'medium': 0.4,
+            'fast': 0.3,
+            'very-fast': 0.2,
+            'brutally': 0.1,
         }
         return speed_map.get(speed, 0)
 
